@@ -21,9 +21,6 @@ def index(request):
                                                   'prediction_fuzzy_logic_word': prediction_fuzzy_logic_word,
                                                   'prediction_machine_learning': prediction_machine_learning,
                                                   'prediction_machine_learning_word': prediction_machine_learning_word})
-        else:
-            parameters = ParametersForm()
-            return render(request, 'index.html', {'form': parameters})
     else:
         parameters = ParametersForm()
 
