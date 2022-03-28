@@ -4,7 +4,7 @@ from .fuzzy_logic import compute_fuzzy_logic
 from .machine_learning import compute_machine_learning
 from .word import prediction_word
 
-# Create your views here.
+
 def index(request):
 
     if request.method == "POST":

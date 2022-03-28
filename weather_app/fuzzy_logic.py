@@ -2,6 +2,7 @@ import numpy as np
 import skfuzzy as fuzz
 from skfuzzy import control as ctrl
 
+
 temperature = ctrl.Antecedent(np.arange(-45, 40, 1), 'temperature')
 humidity = ctrl.Antecedent(np.arange(0, 100, 1), 'humidity')
 pressure = ctrl.Antecedent(np.arange(740, 765, 1), 'pressure')
@@ -92,4 +93,3 @@ def compute_fuzzy_logic(temperature, pressure, humidity):
     precipitationing.compute()
 
     return precipitationing.output['precipitation']
-

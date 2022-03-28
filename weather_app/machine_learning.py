@@ -5,6 +5,7 @@ import os.path
 from weather_fuzzy_logic.settings import BASE_DIR
 import warnings
 
+
 warnings.filterwarnings('ignore')
 
 df = pd.read_csv(os.path.join(BASE_DIR) + '/weather_app/data/weather.csv')
